@@ -3,6 +3,9 @@ name: Runner Test on Windows
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read   # secure
+
 jobs:
   test:
     runs-on: self-hosted
